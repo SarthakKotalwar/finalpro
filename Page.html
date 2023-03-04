@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Traveling Site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css/family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+</head>
+<body class="light-grey">
+
+<!-- Navigation Bar -->
+<div class="bar white border-bottom xlarge">
+  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Traveling site</b></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <head>
+        <link href="slideshow.html">
+  <img class="w3-image" src="london.jpg" alt="London" width="1500" height="700">
+  <div class="w3-display-middle" style="width:65%">
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Flight</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed w3-margin-right"></i>Hotel</button>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car w3-margin-right"></i>Rental</button>
+    </div>
+    </head>
+
+
+    <!-- Tabs -->
+    <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Travel the world with us</h3>
+      <div class="w3-row-padding" style="margin:0 -16px;">
+        <div class="w3-half">
+          <label>From</label>
+          <input class="w3-input w3-border" type="text" placeholder="Departing from">
+        </div>
+        <div class="w3-half">
+          <label>To</label>
+          <input class="w3-input w3-border" type="text" placeholder="Arriving at">
+        </div>
+      </div>
+      <p><button class="w3-button w3-dark-grey">Search and find dates</button></p>
+    </div>
+
+    <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Find the best hotels</h3>
+      <p>Book a hotel with us and get the best fares and promotions.</p>
+      <p>We know hotels - we know comfort.</p>
+      <p><button class="w3-button w3-dark-grey">Search Hotels</button></p>
+    </div>
+
+    <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Best car rental in the world!</h3>
+      <p><span class="w3-tag w3-deep-orange">DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs</p>
+      <input class="w3-input w3-border" type="text" placeholder="Pick-up point">
+      <p><button class="w3-button w3-dark-grey">Search Availability</button></p>
+    </div>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+
+  <!-- Good offers -->
+  <div class="w3-container w3-margin-top">
+    <h3>Good Offers Right Now</h3>
+    <h6>Up to <strong>50%</strong> discount.</h6>
+  </div>
+  <div class="w3-row-padding w3-text-white w3-large">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <a href="https://www.google.com/maps/d/viewer?mid=1NiR9S21Ha13cJY4iLBJJyDtYTlA56c4L&ll=44.12439138341771%2C9.728206699999976&z=12"><img src="cinqueterre.jpg" alt="Cinque Terre" style="width:100%"></a>
+        <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <a href="https://www.google.com/maps/d/viewer?mid=1T2ruXL09Wu1kIuV6qjyecLIB3sU&hl=en&ll=40.73184456100789%2C-74.008112&z=12">\<img src="newyork.jpg" alt="New York" style="width:100%"></a>
+            <span class="w3-display-bottomleft w3-padding">New York</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <a href="https://www.google.com/maps/d/viewer?mid=1bcBfQqwejtyhX02TJE2Ht_xv7QA&ll=37.60919997355506%2C-122.20410355&z=10"><img src="sanfran.jpg" alt="San Francisco" style="width:100%"></a>
+            <span class="w3-display-bottomleft w3-padding">San Francisco</span>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <a href="https://www.google.com/maps/d/viewer?mid=1rU9Fmx5Ax7vJLNDcOSLHqmcGeo4&hl=en_US&ll=43.72304850015326%2C10.39623099999993&z=19"><img src="pisa.jpg" alt="Pisa" style="width:100%"></a>
+            <span class="w3-display-bottomleft w3-padding">Pisa</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="paris.jpg" alt="Paris" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Paris</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Explore Nature -->
+  <div class="w3-container">
+    <h3>Explore Nature</h3>
+    <p>Travel with us and see nature at its finest.</p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <a href="https://www.google.com/maps/d/viewer?mid=15z2JtTURDf2bHFUaydvMRjjTZrw&hl=en_US&ll=65.7514149155775%2C15.565511500000007&z=4"><img src="norway.jpg" alt="Norway" style="width:100%"></a>
+      <div class="w3-container w3-white">
+        <h3>West Coast, Norway</h3>
+        <p class="w3-opacity">Roundtrip from $79</p>
+        <button class="w3-button w3-margin-bottom">Buy Tickets</button>
+      </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+      <a href="https://www.google.com/maps/d/embed?mid=1jiP3u6UmJmCWXx9Y4vsFVViR9xg&hl=en&ie=UTF8&msa=0&ll=47.025205855248785%2C17.248535343750014&spn=5.131199%2C14.501953&z=6&output=embed"><img src="austria.jpg" alt="Austria" style="width:100%"></a>
+      <div class="w3-container w3-white">
+        <h3>Mountains, Austria</h3>
+        <p class="w3-opacity">One-way from $39</p>
+        <button class="w3-button w3-margin-bottom">Buy Tickets</button>
+        <head>
+              <link rel="stylesheet" href="style.css">
+        </head>
+        <div class="dropdown">
+  <button class="dropbtn">More Details</button>
+  <div class="dropdown-content">
+    <a href="https://www.google.com/maps/d/viewer?mid=1FVwY4xWXtlIU7Hk1gULHWMshDoU&hl=en&ll=-26.064185000000016%2C113.68102999999998&z=8">Location</a>
+    <a href="#">More Videos<video width="320" height="240" controls>
+        <source src="austria.mp4" type="video/mp4">
+        <source src="austria.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video></a>
+    <!-- <a href="#">Link 3</a> -->
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="w3-container">
+    <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+      <h2>Get the best offers first!</h2>
+      <p>Join our newsletter.</p>
+      <label>E-mail</label>
+      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+      <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container">
+    <h2>Contact</h2>
+    <p>Let us book your next trip!</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> Pune, India<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone: +91 ******823<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: Traveling site@gmail.com<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i> -->
+    <a href="www.linkedin.com/in/sarthak-kotalwar-b88179211"><i class="fa fa-linkedin w3-hover-opacity"></i></a>  
+  </div>
+  <p>Powered by <a href="https://www.google.com/maps/d/viewer?mid=1pzEjbErhDpVduFeJEQ4yFYaoyo0&ie=UTF8&hl=en&msa=0&ll=18.580904999999994%2C73.985029&spn=0.113915%2C0.137329&z=12&source=embed" target="_blank" class="w3-hover-text-green">S.K</a></p>
+</footer>
+
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>
